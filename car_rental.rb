@@ -79,33 +79,38 @@ class Car_rental
     end
   end
 
-  def rent_car()
+  def rent_car
     puts "List of available cars:"
-    available_cars = @cars.select { |car| 
+    available_cars = @cars.select { |car|
       !car.rented 
     }
-
+  
+    if available_cars.empty?
+      puts "There are no cars available to rent."
+      return
+    end
+  
     available_cars.each_with_index { |car, index| 
       puts "#{index + 1}. #{car}" 
     }
-
+  
     print "Choose a car number to rent: "
     car_index = gets.chomp.to_i - 1
     print "Enter customer name: "
     name = gets.chomp
-
+  
     customer = @customers.find { |cust| 
       cust.name == name 
     }
-
+  
     if customer && car_index >= 0 && car_index < available_cars.size
       customer.rent_car(available_cars[car_index])
-      puts "#{customer.name} has rented #{available_cars[car_index].year} available_cars[car_index].make} #{available_cars[car_index].model}"
+      puts "#{customer.name} has rented #{available_cars[car_index].year} #{available_cars[car_index].make} #{available_cars[car_index].model}"
     else
       puts "Invalid car or customer."
     end
   end
-
+  
   def return_car
     print "Enter customer name: "
     name = gets.chomp
