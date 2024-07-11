@@ -17,4 +17,7 @@ This is a simple command-line interface (CLI) application for managing a car ren
 
 2. Clone the repository:
 
-Run ruby ```app.rb in``` the terminal
+Run ruby ```app.rb``` the terminal
+```bash
+  ruby app.rb
+```
