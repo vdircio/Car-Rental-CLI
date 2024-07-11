@@ -11,7 +11,7 @@ This is a simple command-line interface (CLI) application for managing a car ren
 1. Clone the repository:
 
   ```bash
-  git clone https://github.com/your_username/car_rental_cli.git
+  git clone https://github.com/vdircio/Car-Rental-CLI
   cd car_rental_cli
 ```
 
