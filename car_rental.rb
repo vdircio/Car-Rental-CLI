@@ -39,7 +39,7 @@ class Car_rental
       when 6
         return_car
       when 7
-        puts "Goodbye!"
+        puts "Until next time!"
         break
       else
         puts "Invalid option. Please try again."
@@ -66,9 +66,24 @@ class Car_rental
   end
 
   def list_cars
-    puts "List of cars:"
-    @cars.each do |car|
-      puts "#{car.year} #{car.make} #{car.model} - #{car.rented ? 'Rented' : 'Available'}" 
+    if @cars.empty?
+      puts "No cars found."
+    else
+      puts "List of cars:"
+      @cars.each do |car|
+        puts "#{car.year} #{car.make} #{car.model} - #{car.rented ? 'Rented' : 'Available'}" 
+      end
+    end
+  end
+
+  def list_customers
+    if @customers.empty?
+      puts "No customers found."
+    else
+      puts "List of customers:"
+      @customers.each { |customer| 
+        puts customer.name 
+      }
     end
   end
 

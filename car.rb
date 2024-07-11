@@ -9,11 +9,11 @@ class Car
   end
 
   def rent
-    :rented = true
+    @rented = true
   end
 
   def return_car
-    :rented = false
+    @rented = false
   end
 
   def to_s

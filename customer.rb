@@ -2,8 +2,8 @@ class Customer
   attr_accessor :name, :rented_cars
 
   def initialize(name)
-    :name = name
-    rented_cars = []
+    @name = name
+    @rented_cars = []
   end
 
   def rent_car(car)
