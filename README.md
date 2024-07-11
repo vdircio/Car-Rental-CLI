@@ -10,6 +10,11 @@ This is a simple command-line interface (CLI) application for managing a car ren
 
 1. Clone the repository:
 
-```sh
-git clone https://github.com/yourusername/car-rental-cli.git
-Run `ruby app.rb` in the terminal
+  ```bash
+  git clone https://github.com/your_username/car_rental_cli.git
+  cd car_rental_cli
+```
+
+2. Clone the repository:
+
+Run ruby ```app.rb in``` the terminal
