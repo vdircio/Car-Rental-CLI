@@ -12,7 +12,7 @@ This is a simple command-line interface (CLI) application for managing a car ren
 
   ```bash
   git clone https://github.com/vdircio/Car-Rental-CLI
-  cd car_rental_cli
+  cd car-rental-cli
 ```
 
 2. Clone the repository:
