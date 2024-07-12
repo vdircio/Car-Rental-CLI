@@ -54,7 +54,7 @@ class Car_rental
     model = gets.chomp
     print "Enter car year: "
     year = gets.chomp.to_i
-    @cars << Car.new(make, model, year)
+    @cars << Car.new(year, make, model)
     puts "Car added: #{year} #{make} #{model}"
   end
 
